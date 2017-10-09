@@ -6,7 +6,7 @@ import java.util.Map;
 public class Problem4 {
 
 	public static void main(String[] args) {
-		String str = "Ratzs live on n";
+		String str = "Zeus was deified, saw Suez";
 		
 		boolean result = IsPalindrome(str);
 		System.out.println(result);

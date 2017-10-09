@@ -72,6 +72,7 @@ public class Problem3 {
 		setOfStacks.printStacks();
 		System.out.println();
 		setOfStacks.popAt(1);
+		setOfStacks.printStacks();
 		setOfStacks.popAt(0);
 		setOfStacks.printStacks();
 	}

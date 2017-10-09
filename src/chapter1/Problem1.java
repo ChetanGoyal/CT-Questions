@@ -1,5 +1,7 @@
 package chapter1;
 
+import java.util.Arrays;
+
 /*
  * Determine whether the given string has all unique characters.
  */
@@ -51,7 +53,7 @@ public class Problem1 {
 	}
 	
 	/*
-	 * this will simply create a boolean array without the need of any other data structure.
+	 * this will simply create a boolean array
 	 */
 	public static boolean IsUniqueWithoutDS(String s) {
 		
@@ -69,6 +71,21 @@ public class Problem1 {
 			}
 			else {
 				charArray[s.charAt(i)] = true;
+			}
+		}
+		return true;
+	}
+	
+	/*
+	 * without any data structure.
+	 */
+	
+	public static boolean isUniqueWithoutDataStructure(String word) {
+		for(int i=0;i<word.length()-1;i++) {
+			for(int j=i+1;j<word.length();j++) {
+				if(word.charAt(i) == word.charAt(j)) {
+					return false;
+				}
 			}
 		}
 		return true;

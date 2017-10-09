@@ -10,7 +10,7 @@ public class Problem5 {
 		
 		while(!stack.isEmpty()) {
 			int item = stack.pop();
-			while(!result.isEmpty() && item<result.peek()) {   // [8, 7, 6, 5, 4, 3, 2, 1]
+			while(!result.isEmpty() && item<result.peek()) {   // [Top(8), 7, 6, 5, 4, 3, 2, 1]
 				stack.push(result.pop());
 			}
 			result.push(item);

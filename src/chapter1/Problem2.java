@@ -8,7 +8,7 @@ public class Problem2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String[][] pairs = { { "apple", "papel" }, { "carrot", "tarroc" }, { "hello", "llloh" }, { "hell", "check" } };
+		String[][] pairs = { { "God", "dog" }, { "carrot", "tarroc" }, { "hello", "llloh" }, { "hell", "check" } };
 		for (String[] pair : pairs) {
 			String word1 = pair[0];
 			String word2 = pair[1];

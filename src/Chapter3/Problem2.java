@@ -3,49 +3,46 @@ package Chapter3;
 import java.util.Stack;
 
 public class Problem2 {
-	
+
 	Stack<Integer> s;
 	Integer minEle;
-	
-	Problem2(){
+
+	Problem2() {
 		s = new Stack<>();
 	}
-	
+
 	public void push(Integer x) {
-		if(s.isEmpty()) {
+		if (s.isEmpty()) {
 			minEle = x;
 			s.push(x);
 			return;
 		}
-		if(x<minEle) {
-			s.push(2*x-minEle);
+		if (x < minEle) {
+			s.push(2 * x - minEle);
 			minEle = x;
-		}
-		else {
+		} else {
 			s.push(x);
 		}
-		
+
 	}
-	
+
 	public void pop() {
-		if(s.isEmpty()) {
+		if (s.isEmpty()) {
 			System.out.println("Stack is empty");
 			return;
 		}
 		Integer t = s.pop();
-		if(t<minEle) {
-			minEle = 2*minEle - t;
-		}
-		else {
+		if (t < minEle) {
+			minEle = 2 * minEle - t;
+		} else {
 			System.out.println(t);
 		}
 	}
-	
+
 	public void getMin() {
-		if(s.isEmpty()) {
+		if (s.isEmpty()) {
 			System.out.println("Stack is empty");
-		}
-		else {
+		} else {
 			System.out.println("Min Element is:" + minEle);
 		}
 	}
